@@ -43,4 +43,4 @@ Modifie les paramètres dans [`config.py`](c:/Users/antoi/Documents/github/wikip
 - afon30
 
 ---
-Projet éducatif, le but est simplement de télécharger en local un wikipedia
+Projet éducatif, le but est simplement de télécharger en local un wikipedia.
