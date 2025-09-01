@@ -7,7 +7,6 @@ def extract_wikipedia_links(html_source):
     soup = BeautifulSoup(html_source, 'html.parser')
     base_url = f"https://{config.language}.wikipedia.org"
 
-    # Look for <a> tags with an href starting with "/wiki/"
     for link in soup.find_all('a', href=True):
         href = link['href']
 
@@ -17,8 +16,6 @@ def extract_wikipedia_links(html_source):
             
             full_url = urljoin(base_url, href)
             found_links.append(full_url)
-            
-    # Remove duplicates by converting the list to a set and back to a list
     unique_links = list(set(found_links))
     print(f"🔎 {len(unique_links)} unique links found on the page.")
     return unique_links
