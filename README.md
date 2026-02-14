@@ -4,28 +4,28 @@
 
 ## 🌟 Key Features
 
--   **High-Speed Asynchronous Core**: Built on `asyncio` and `aiohttp` for non-blocking network I/O, supporting high-concurrency downloads.
--   **Clean Structural Extraction**: Intelligent parsing that retains headers, paragraphs, lists, and tables while stripping images, videos, scripts, and UI junk.
--   **Local Style Injection**: Automatically downloads Wikipedia's "Vector" CSS and patches local HTML files for an authentic "offline" look.
--   **Internal Link Mapping**: Rewrites all internal Wikipedia links to point to your local `.html` files, enabling seamless offline navigation.
--   **Automatic Stack-based Crawling**: Starts from a random or specific page and follows internal links to build a comprehensive local knowledge base.
--   **Integrated Local Viewer**: Includes a dedicated web server script to browse your archive through a generated dashboard.
+- **High-Speed Asynchronous Core**: Built on `asyncio` and `aiohttp` for non-blocking network I/O, supporting high-concurrency downloads.
+- **Clean Structural Extraction**: Intelligent parsing that retains headers, paragraphs, lists, and tables while stripping images, videos, scripts, and UI junk.
+- **Local Style Injection**: Automatically downloads Wikipedia's "Vector" CSS and patches local HTML files for an authentic "offline" look.
+- **Internal Link Mapping**: Rewrites all internal Wikipedia links to point to your local `.html` files, enabling seamless offline navigation.
+- **Automatic Stack-based Crawling**: Starts from a random or specific page and follows internal links to build a comprehensive local knowledge base.
+- **Integrated Local Viewer**: Includes a dedicated web server script to browse your archive through a generated dashboard.
 
 ## 🛠️ Installation
 
-1.  **Clone the Repository**:
+1. **Clone the Repository**:
     ```bash
     git clone https://github.com/yourusername/wikipemi.git
     cd wikipemi
     ```
 
-2.  **Setup Environment**:
+2. **Setup Environment**:
     ```bash
     python -m venv .venv
     source .venv/bin/activate  # Windows: .venv\Scripts\activate
     ```
 
-3.  **Install Dependencies**:
+3. **Install Dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
@@ -58,16 +58,16 @@ Visit **`http://localhost:8000`** in your browser to explore your offline Wikipe
 
 ## 📂 Project Structure
 
--   `main.py`: CLI entry point.
--   `viewer.py`: Local dashboard and web server.
--   `wikipemi/`: Core package.
-    -   `core.py`: Async task management & link stack logic.
-    -   `parser.py`: HTML sanitization & structural extraction.
-    -   `storage.py`: Async file I/O & asset management.
-    -   `config.py`: Centralized browser-emulation & network settings.
+- `main.py`: CLI entry point.
+- `viewer.py`: Local dashboard and web server.
+- `wikipemi/`: Core package.
+  - `core.py`: Async task management & link stack logic.
+  - `parser.py`: HTML sanitization & structural extraction.
+  - `storage.py`: Async file I/O & asset management.
+  - `config.py`: Centralized browser-emulation & network settings.
 
 ## 🛡️ Bot Detection Avoidance
-WikiPemi uses modern browser headers and automated "politeness" delays to minimize the risk of being flagged by Wikipedia's security systems. For massive scrapes, consider using a VPN or lower concurrency.
+Wikipemi uses modern browser headers and automated "politeness" delays to minimize the risk of being flagged by Wikipedia's security systems. For massive scrapes, consider using a VPN or lower concurrency.
 
 ---
 *Professional Archiving Made Simple.*
