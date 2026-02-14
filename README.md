@@ -1,6 +1,6 @@
-# WikiPemi 🚀
+# WikipEmi 🚀
 
-**WikiPemi** is a professional-grade, high-performance Wikipedia text archiver. It is designed to download entire Wikipedia language editions while preserving structural integrity and providing a seamless local browsing experience.
+**WikipEmi** is a professional-grade, high-performance Wikipedia text archiver. It is designed to download entire Wikipedia language editions while preserving structural integrity and providing a seamless local browsing experience.
 
 ## 🌟 Key Features
 
