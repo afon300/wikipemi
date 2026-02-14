@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Project specific
+wiki_data/
+wiki_output/
+my_wiki/
+data_output/
+style.css
+index.html
+
+# IDEs
+.vscode/
+.idea/
